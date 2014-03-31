@@ -1,0 +1,190 @@
+/* slideshow stylez */
+
+.jds-slideshow{
+	position:relative;
+	padding:0;
+	width:100%; height:auto;
+}
+
+.jds-slideshow.closed{
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+
+	.jds-slideshow h2{
+		float:left;
+		font-family: 'Open Sans', sans-serif;
+		font-size:38px;
+		font-weight:600;
+		margin: 30px 20px 20px;
+	}
+
+	.jds-slideshow .btn-prev{
+		background-image:url('../img/btn-arrow-left.png');
+		background-size: 100%;
+		display:block;
+		position:absolute;
+		top:230px; left:20px;
+		width:43px; height:84px;
+		z-index:2;
+	}
+	
+	.jds-slideshow .btn-next{
+		background-image:url('../img/btn-arrow-right.png');
+		background-size: 100%;
+		display:block;
+		position:absolute;
+		top:230px; right:20px;
+		width:43px; height:84px;
+		z-index:2;
+	}
+				
+	.jds-slides{
+		clear: both;
+		position:relative;
+		width:100%; height:auto;
+	}
+	
+		.jds-slide.jds-slide-first{
+			float:left;
+			position:relative;
+		}
+	
+		.jds-slide{
+			display:block;
+			float:none;
+			padding:0 8%;
+			position:absolute;
+			-webkit-transform:translate3d(0,0,0);
+			width:84%; height:auto;
+		}
+		
+			.jds-slide img{
+				display:block;
+				float:left;
+				width:42%; height:auto;
+			}
+
+			.jds-slide-img-only img{
+				float: none;
+				margin: 0 auto;
+			}
+		
+			.jds-slide .jds-slide-details{
+				display:block;
+				float:left;
+				padding:0 0 0 20px;
+				width:42%; height:auto;
+			}
+
+			.jds-slide-text-only .jds-slide-details{
+				float: none;
+				margin: 0 auto;
+			}
+	
+		.slideshow-buttons{
+			position:relative;
+		}
+		
+	.jds-slide h2{
+		color:#0099ff;
+		margin:0;
+	}
+
+	#slideshow-container nav{
+		clear: both;
+		margin: 30px auto 20px;
+		overflow: hidden;
+		width: auto; height: 10px;
+	}
+
+	#slideshow-container nav div{
+		width: 110%;
+	}
+	
+		#slideshow-container nav .btn-pagi{
+			background: #ccc;
+			border-radius: 5px;
+			display: block;
+			float: left;
+			margin: 0 5px 0 0;
+			width: 10px; height: 10px;
+		}
+
+		#slideshow-container nav .btn-pagi.active{
+			background: #000;
+		}
+
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+	.jds-slide{
+		padding:0;
+		width: 100%
+	}
+
+		.jds-slideshow .btn-prev, .jds-slideshow .btn-next{
+			top:160px; 
+		}
+
+		.jds-slide img{
+			display:block;
+			float:none;
+			margin: 0 auto;
+			width:50%; height:auto;
+		}
+
+		.jds-slide .jds-slide-details{
+			display:block;
+			float:none;
+			margin: 10px auto 0;
+			padding: 0;
+			width:50%; height:auto;
+		}
+
+}
+
+/* phones, small portrait tablets */
+@media only screen and (max-width: 767px) {
+
+	.jds-slideshow .btn-prev{
+		background-color: rgba(250,250,250,0.2);
+		width: 15px; height: 30px;
+		top:140px; left: 0;
+	}
+
+	.jds-slideshow .btn-next{
+		background-color: rgba(250,250,250,0.2);
+		width: 15px; height: 30px;
+		top:140px; right: 0;
+	}
+	
+	.jds-slide img{
+		display:block;
+		float:none;
+		width:98%; height:auto;
+	}
+
+	.jds-slide-img-only img{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.jds-slide .jds-slide-details{
+		display:block;
+		float:none;
+		margin: 10px 0 0;
+		padding: 0;
+		width:98%; height:auto;
+	}
+		
+		.jds-slide .jds-slide-details p{
+			font-size:12px;
+		}
+
+	.jds-slide-text-only .jds-slide-details{
+		float: none;
+		margin: 0 auto;
+	}
+
+}
