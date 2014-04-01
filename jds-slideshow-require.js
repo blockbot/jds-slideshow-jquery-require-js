@@ -10,7 +10,7 @@ define(["vendor/jquery-1.10.2.min"],function(){
 	var $ = jQuery,
 		jds = {
 	
-		outerContainer: $("#slideshow-container"),
+		outerContainer: $(".slideshow-container"),
 		container: $(".jds-slideshow"),
 		slideshowID: $(".jds-slideshow").attr("data-slideshow-id"),
 		slides: $(".jds-slides"),

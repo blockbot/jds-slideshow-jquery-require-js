@@ -18,7 +18,7 @@ $.fn.jdSlideshow = function(options) {
 		var slideshowID = $(this).attr("id"),
 		 	jds = {
 		
-			outerContainer: $(this).parent("#slideshow-container"),
+			outerContainer: $(this).parent(".slideshow-container"),
 			container: $("#" + slideshowID),
 			slideshowDataID: $(".jds-slideshow").attr("data-slideshow-id"),
 			slides: $(".jds-slides"),

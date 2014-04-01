@@ -91,18 +91,18 @@
 		margin:0;
 	}
 
-	#slideshow-container nav{
+	.slideshow-container nav{
 		clear: both;
 		margin: 30px auto 20px;
 		overflow: hidden;
 		width: auto; height: 10px;
 	}
 
-	#slideshow-container nav div{
+	.slideshow-container nav div{
 		width: 110%;
 	}
 	
-		#slideshow-container nav .btn-pagi{
+		.slideshow-container nav .btn-pagi{
 			background: #ccc;
 			border-radius: 5px;
 			display: block;
@@ -111,7 +111,7 @@
 			width: 10px; height: 10px;
 		}
 
-		#slideshow-container nav .btn-pagi.active{
+		.slideshow-container nav .btn-pagi.active{
 			background: #000;
 		}
 
