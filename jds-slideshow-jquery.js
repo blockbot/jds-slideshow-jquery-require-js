@@ -123,7 +123,7 @@ $.fn.jdSlideshow = function(options) {
 						slideData = null;
 
 					$.ajax({
-						url:  (window.location.host === "local.sandbox.com") ? "/jd/www/wp-admin/admin-ajax.php?action=get_package_items_ajax&id=" + jds.slideshowDataID : "/wp-admin/admin-ajax.php?action=get_package_items_ajax&id=" + jds.slideshowDataID,
+						url:  "json/jds-slideshow-dummy.json",
 						dataType: "json",
 						success: function (data) {
 

@@ -113,7 +113,7 @@ define(["vendor/jquery-1.10.2.min"],function(){
 					slideData = null;
 
 				$.ajax({
-					url:  (window.location.host === "local.sandbox.com") ? "/jd/www/wp-admin/admin-ajax.php?action=get_package_items_ajax&id=" + jds.slideshowID : "/wp-admin/admin-ajax.php?action=get_package_items_ajax&id=" + jds.slideshowID,
+					url:  "json/jds-slideshow-dummy.json",
 					dataType: "json",
 					success: function (data) {
 
