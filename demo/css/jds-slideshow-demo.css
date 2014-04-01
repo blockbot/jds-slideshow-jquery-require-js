@@ -115,6 +115,22 @@
 			background: #000;
 		}
 
+/** clearfix **/
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 /* tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
