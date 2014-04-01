@@ -1,0 +1,33 @@
+{
+    "name": "jds-slideshow",
+    "title": "JDS Slideshow",
+    "description": "A responsive, touch enabled, ajax slideshow plugin for jQuery and require.js",
+    "keywords": [
+        "slideshow",
+        "responsive",
+        "touch",
+        "ajax"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Joey Dehnert",
+        "email": "jd@joeydehnert.com",
+        "url": "http://joeydehnert.com/jds-slideshow-a-responsive-and-touch-enabled-slideshow-plugin-for-jquery-and-require-js/"
+    },
+    "maintainers": [
+        {
+            "name": "Joey Dehnert",
+            "email": "jd@joeydehnert.com",
+            "url": "http://joeydehnert.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
